@@ -29,7 +29,6 @@ public class supplement1
     }
 
     public static double AreaOfTriangle(double triangleBase, double triangleHeight){
-        throw new NotImplementedException();
-        
+        return triangleBase * triangleHeight / 2;         
     }
 }
