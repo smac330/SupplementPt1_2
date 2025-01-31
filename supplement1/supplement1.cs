@@ -28,6 +28,12 @@ public class supplement1
         return double.Pow(radius, 2.0) * double.Pi;
     }
 
+    /// <summary>
+    /// returns the area of a triangle
+    /// </summary>
+    /// <param name="triangleBase"> base of a triangle</param>
+    /// <param name="triangleHeight"> height of a triangle</param>
+    /// <returns> area of a triangle with the given base and height</returns>
     public static double AreaOfTriangle(double triangleBase, double triangleHeight){
         return triangleBase * triangleHeight / 2;         
     }
