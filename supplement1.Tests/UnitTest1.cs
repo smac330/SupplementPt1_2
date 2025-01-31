@@ -9,17 +9,23 @@ public class UnitTest1
 
     }
 
-     [Fact]
+    [Fact]
     public void AreaOfARectangleCalculationSame()
     {
         Assert.True(25.0 == supplement1.AreaOfRectangle(5.0, 5.0));
         
     }
 
-     [Fact]
+    [Fact]
     public void AreaOfACircleCalculation()
     {
         Assert.True(double.Pi == supplement1.AreaOfCircle(1.0));
         
+    }
+
+    [Fact]
+    public void AreaOfATriangle()
+    {
+        Assert.True(100.0 == supplement1.AreaOfTriangle(50.0, 4.0));
     }
 }
