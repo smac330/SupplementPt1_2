@@ -37,5 +37,17 @@ public class UnitTest1
             Assert.Matches("^[A-Za-z0-9_]+$", password);
         }
 
+[Fact]
+    public void TestGenerate(){
+        var (hex, (r, g, b)) = Supplementpt1_2.GenerateColor();
 
+        Assert.StartsWith("#", hex);
+        Assert.Matches("^#[0-9A-Fa-f]{6}$", hex);
+        Assert.InRange(r, 0, 255);
+        Assert.InRange(g, 0, 255);
+        Assert.InRange(b, 0, 255);
+
+        string expectedHex = $"#{r:X2}{g:X2}{b:X2}";
+        Assert.Equal(expectedHex, hex);
+    }
 }
