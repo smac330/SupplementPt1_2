@@ -10,8 +10,8 @@ public class Supplementpt1_2
     /// <summary>
     /// generates a random number
     /// </summary>
-    /// <param name="mean"></param>
-    /// <param name="standardDev"></param>
+    /// <param name="mean">the mean value.</param>
+    /// <param name="standardDev">the standard deviation</param>
     /// <returns></returns>
    public static double GenerateRandom(double mean, double standardDev)
     {
