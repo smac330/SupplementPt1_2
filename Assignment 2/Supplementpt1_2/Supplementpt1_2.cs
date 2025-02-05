@@ -21,6 +21,11 @@ public class Supplementpt1_2
         return mean + standardDev * randStandardNormal;
     } 
 
+    /// <summary>
+    /// generates a random password consisting of uppercase & lowercase letters, numbers, and underscores.
+    /// </summary>
+    /// <param name="length">the length of the password</param>
+    /// <returns>randomly generated password string</returns>
     public static string GeneratePassword(int length){
         const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_";
         Random rand = new Random();
