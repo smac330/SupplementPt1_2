@@ -2,6 +2,9 @@
 
 public class Supplementpt1_2
 {
+    /// <summary>
+    /// Provides utility methods for generating random numbers, passwords, and colors.
+    /// </summary>
     public static readonly Random random = new Random();
 
    public static double GenerateRandom(double mean, double standardDev)
@@ -21,6 +24,11 @@ public class Supplementpt1_2
 
     public static (string, (int, int, int)) GenerateColor()
         {
-            throw new NotImplementedException();
+        Random rand = new Random();
+        int r = rand.Next(256);
+        int g = rand.Next(256);
+        int b = rand.Next(256);
+        string hex = $"#{r:X2}{g:X2}{b:X2}";
+        return (hex, (r, g, b));
         } 
 }
