@@ -20,4 +20,8 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Supplementpt1_2\Supplementpt1_2.csproj" />
+  </ItemGroup>
+
 </Project>
