@@ -3,10 +3,16 @@
 public class Supplementpt1_2
 {
     /// <summary>
-    /// Provides utility methods for generating random numbers, passwords, and colors.
+    /// provides methods for generating random numbers, passwords, and colors
     /// </summary>
     public static readonly Random random = new Random();
 
+    /// <summary>
+    /// generates a random number
+    /// </summary>
+    /// <param name="mean"></param>
+    /// <param name="standardDev"></param>
+    /// <returns></returns>
    public static double GenerateRandom(double mean, double standardDev)
     {
         double num1 = 1.0 - random.NextDouble();

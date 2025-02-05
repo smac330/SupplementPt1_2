@@ -30,7 +30,7 @@ public class UnitTest1
     [Fact]
     public void TestGeneratePassword()
         {
-            int length = 10;
+            int length = 8;
             string password = Supplementpt1_2.GeneratePassword(length);
 
             Assert.Equal(length, password.Length);
