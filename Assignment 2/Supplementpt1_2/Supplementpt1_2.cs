@@ -12,9 +12,11 @@ public class Supplementpt1_2
         return mean + standardDev * randStandardNormal;
     } 
 
-    public static string GeneratePassword(int length)
-        {
-            
+    public static string GeneratePassword(int length){
+        const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_";
+        Random rand = new Random();
+
+        return new string(Enumerable.Range(0, length).Select(_ => chars[rand.Next(chars.Length)]).ToArray());
         } 
 
     public static (string, (int, int, int)) GenerateColor()
