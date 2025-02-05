@@ -12,9 +12,9 @@ public class Supplementpt1_2
         return mean + standardDev * randStandardNormal;
     } 
 
-    public static double GeneratePassword(int length)
+    public static string GeneratePassword(int length)
         {
-            throw new NotImplementedException();
+            
         } 
 
     public static (string, (int, int, int)) GenerateColor()
